@@ -1,4 +1,5 @@
-{
+[
+  {
     "policy": "sane",
     "experiment": "procgen_miner_fixed_seq",
     "allowed_uncertainty_scale_for_creation": [0.1, 10.0],
@@ -35,3 +36,4 @@
     "large_file_path": "tmp",
     "comment": ""
   }
+]
