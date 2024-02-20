@@ -11,6 +11,7 @@ class SanePolicyConfig(ClearPolicyConfig):
         self.max_nodes = 16
         self.fraction_of_nodes_mergeable = 0.75  # Of max_nodes
         self.create_adds_replay = False
+        self.loss_uses_clear_loss = True
         self.clear_loss_coeff = 1.0
         self.merge_by_frame = True
         self.merge_by_batch = True  # Alternative: merge by average of entire buffer
@@ -30,6 +31,7 @@ class SanePolicyConfig(ClearPolicyConfig):
         self.map_task_id_to_module = False
         self.baseline_extended_arch = True
         self.baseline_includes_uncertainty = True  # Necessary for SANE, overrides IMPALA
+        
 
     def _load_from_dict_internal(self, config_dict):
         config = super()._load_from_dict_internal(config_dict)
