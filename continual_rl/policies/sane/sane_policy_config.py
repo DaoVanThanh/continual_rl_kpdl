@@ -11,7 +11,7 @@ class SanePolicyConfig(ClearPolicyConfig):
         self.max_nodes = 16
         self.fraction_of_nodes_mergeable = 0.75  # Of max_nodes
         self.create_adds_replay = False
-        self.loss_uses_clear_loss = True
+        self.loss_uses_clear_loss = False
         self.clear_loss_coeff = 1.0
         self.merge_by_frame = True
         self.merge_by_batch = True  # Alternative: merge by average of entire buffer

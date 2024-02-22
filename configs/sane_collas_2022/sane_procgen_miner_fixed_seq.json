@@ -10,7 +10,7 @@
     "batch_replay_ratio": 8,
     "unroll_length": 32,
     "entropy_cost": 0.01,
-    "baseline_cost": 10.0,
+    "baseline_cost": 5.0,
     "uncertainty_scale": 1.0,
     "learning_rate": 0.0004,
     "epsilon": 0.01,
@@ -32,7 +32,7 @@
     "slow_critic_update_cadence": 1000,
     "only_create_from_active": true,
     "creation_pattern": "asymmetric_reset_anchor",
-    "torch_multiprocessing_sharing_strategy": "file_system",
+    "torch_multiprocessing_sharing_strategy": "file_descriptor",
     "large_file_path": "tmp",
     "comment": ""
   }
